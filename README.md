@@ -38,7 +38,29 @@ Ensure the following are installed on your Windows machine:
 
 ---
 
-### **4. Run the Development Server**
+### **3. Install Django**
+
+After activating the virtual environment, install Django and other dependencies:
+
+```bash
+pip install django
+```
+
+---
+
+### **4. Verify Installation**
+
+Check if Django is installed correctly:
+
+```bash
+python -m django --version
+```
+
+---
+
+---
+
+### **5. Run the Development Server**
 
 Start the Django development server:
 
