@@ -1,0 +1,11 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="email">Email</label>
+    <input type="email" name="email" value="{{ user.email }}" required>
+    <label for="full_name">Full Name</label>
+    <input type="text" name="full_name" value="{{ user.full_name }}">
+    <button type="submit">Save Changes</button>
+</form>
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
