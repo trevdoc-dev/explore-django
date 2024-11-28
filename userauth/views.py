@@ -34,3 +34,7 @@ def edit_profile(request):
         return render(request, "edit_profile.html", {"success": True})
 
     return render(request, "edit_profile.html", {"user": user})
+
+
+def main_page(request):
+    return render(request, "main_page.html")

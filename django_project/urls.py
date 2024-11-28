@@ -20,6 +20,7 @@ from django.urls import path
 from userauth import views
 
 urlpatterns = [
+    path("", views.main_page, name="main_page"),
     path("admin/", admin.site.urls),
     path("login/", views.login_view, name="login"),
     path("edit-profile/", views.edit_profile, name="edit_profile"),
